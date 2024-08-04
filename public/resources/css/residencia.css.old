@@ -1,0 +1,954 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "zheader"
+        "zsection"
+        "zfooter";
+}
+
+header {
+    grid-area: zheader;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo_header {
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#header-botonera {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#header-botonera div>a {
+    color: black;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+#header-botonera div {
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#header-botonera div:hover {
+    background-color: #BA2344;
+    border-color: #BA2344;
+
+}
+
+#header-botonera div:hover a {
+    color: white;
+}
+
+#header-botonera div:hover #user {
+    color: white;
+}
+
+#header-botonera div:hover #homee {
+    color: white;
+}
+
+#homee {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+#user {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+section {
+    grid-area: zsection;
+    width: 100%;
+    height: 100%;
+}
+
+.cosas button {
+    margin-top: 15px;
+}
+
+#boton-publicar a {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.home {
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+
+#imgs-residencias {
+    height: 88vh;
+    background-color: #D5254B;
+    display: flex;
+    flex-direction: column;
+}
+
+#nombre-residencia {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+}
+
+#nombre-residencia i {
+    color: white;
+    font-weight: 900;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+}
+
+#logo-residencias {
+    width: 80px;
+    height: 50px;
+}
+
+#imagenes {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+#img1 {
+    height: 97%;
+    width: 35%;
+    border-radius: 20px;
+}
+
+.imgs1 {
+    height: 66%;
+    width: 47%;
+    border-radius: 20px;
+}
+
+.imgs2 {
+    height: 27%;
+    width: 47%;
+    border-radius: 20px;
+}
+
+.imgs2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+
+}
+
+#opciones-residencias {
+    background-color: rgb(225, 225, 225);
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#opciones-residencias p {
+    margin-left: 100px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#opciones-residencias p:hover {
+    background-color: #D5254B;
+    color: white;
+}
+
+#contenedor-infomacion {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#contenedor-infomacion i {
+    width: 87%;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    color: #BA2344;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-top: 100px;
+}
+
+#info-residencia-adicional {
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+#div1 {
+    width: 55%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    width: 45%;
+    gap: 20px;
+}
+
+#div2 p {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#div2 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#ctHab {
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido-habitaciones {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 140px;
+}
+
+#contenido-opiniones {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+#opinions {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: space-evenly;
+}
+
+.box {
+    color: white;
+    height: 200px;
+    width: 230px;
+    border: 4px solid #D5254B;
+    border-radius: 18px;
+}
+
+.box h4 {
+
+    margin-left: 20px;
+}
+
+.box p {
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 80%;
+    /* 80% del ancho del contenedor */
+    height: auto;
+    /* Altura automática para que el párrafo se ajuste según el contenido */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    word-break: break-all;
+    /* Romper palabras en cualquier punto cuando alcancen el límite */
+}
+
+.opinuser {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.opinuser svg {
+    position: relative;
+    left: 17px;
+}
+
+.habitaciones {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 30%;
+    margin-top: 30px;
+    border: #313133 solid 1px;
+    border-radius: 20px;
+}
+
+.img-hab {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+.info-hab {
+    position: relative;
+    margin-top: -20px;
+    right: 20px;
+    top: 20px;
+    margin-left: 10px;
+    background-color: transparent;
+    padding: 20px;
+    height: 90px;
+    width: 1075px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+#precioCaract {
+    position: relative;
+    left: 740px;
+    bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    width: 43%;
+    gap: 20px;
+    color: black;
+
+}
+
+#precioCaract p {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#precioCaract div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#inf {
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    color: #BA2344;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-top: 20px;
+    position: relative;
+    right: 300px;
+}
+
+.informacion_hab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rating {
+    color: white;
+    display: flex;
+}
+
+#contenido-preguntas {
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    padding: 20px;
+    /* Añade espacio alrededor del contenedor */
+    color: #98989B;
+
+}
+
+#fqs {
+    position: absolute;
+    /* Posiciona el elemento de manera absoluta */
+    top: 100%;
+    left: 50%;
+    /* Coloca el elemento en el centro horizontal */
+    transform: translateX(-50%);
+    /* Ajusta la posición horizontal */
+    color: #BA2344;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.columna {
+    position: relative;
+    width: calc(100% / 4);
+    /* Divide el ancho en 4 columnas */
+    margin: 0 10px;
+    /* Añade margen horizontal entre las columnas */
+}
+
+.pregunta {
+    position: relative;
+    top: 100px;
+    margin-bottom: 10px;
+    /* Añade margen inferior entre las preguntas */
+    border-top: 1px solid #313133;
+    /* Añade una línea divisoria arriba de la pregunta */
+    font-size: 13px;
+    /* Cambia el tamaño del texto */
+    padding: 10px;
+    /* Añade un relleno para separar el texto de las líneas divisorias */
+    white-space: nowrap;
+    /* Evita el salto de línea */
+    overflow: hidden;
+    /* Oculta el contenido que desborda */
+    text-overflow: ellipsis;
+    /* Muestra puntos suspensivos (...) cuando el texto desborda */
+}
+
+.respuesta {
+    display: none;
+    /* Oculta las respuestas por defecto */
+    margin-top: 10px;
+}
+
+#boton-publicar a {
+    color: white;
+    text-decoration: none;
+}
+
+#mapa-residencia {
+    height: 90vh;
+    width: 60vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 300px;
+}
+
+#calcula-distancias {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+#div-buscador {
+    margin-top: 100px;
+    width: 1000px;
+    background-color: #D5254B;
+    border-radius: 30px;
+}
+
+#contenedor-buscador h1 {
+    font-size: 17px;
+    text-align: left;
+    font-weight: 1000;
+    color: white;
+}
+
+#contenedor-buscador {
+    margin-top: 100px;
+    padding: 40px;
+    background-color: #D5254B;
+    border-radius: 20px;
+    width: 920px;
+    height: 100px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#contenedor-buscador img {
+    width: 100px;
+    position: relative;
+    left: 140px;
+    bottom: 30px;
+}
+
+#contenedor-input {
+    display: flex;
+    align-items: center;
+}
+
+#input-buscador {
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding-left: 55px;
+    color: #7a7b80;
+    font-size: 17px;
+}
+
+#input-buscador:focus {
+    outline-color: #7a7b80;
+}
+
+#boton-buscar-ciudades {
+    font-size: 30px;
+    position: relative;
+    right: 540px;
+    top: 3px;
+    color: #D5254B;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#mapa {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#mapa iframe {
+    width: 700px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+#distancias {
+    padding: 30px;
+    width: 230px;
+    height: 290px;
+    border-radius: 30px;
+    background-color: #D5254B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#distancias h4 {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#distancias p {
+    font-size: 2cqmax;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: 700;
+}
+
+#distancias ion-icon {
+    font-size: 50px;
+}
+
+#homepage-ubicaciones {
+    margin-top: 30px;
+    background-color: #ececec;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#homepage-ubicaciones h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    display: flex;
+    color: #BA2344;
+    font-weight: 1000;
+}
+
+#negro {
+    color: black;
+    font-weight: 1000;
+    margin-left: 20px;
+}
+
+#carrusel-residencias {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.residencias {
+    width: 23%;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img-residencia {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.info-residencia {
+    position: relative;
+    margin-top: -20px;
+    background-color: white;
+    padding: 20px;
+    height: 200px;
+    width: 275px;
+    border-radius: 20px;
+
+}
+
+.div-opiniones {
+
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nombre-residencia {
+    font-size: 20px;
+    align-items: start;
+    display: flex;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.botonera-residencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botonera-residencia div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    width: 50%;
+    gap: 10px;
+}
+
+.boton-residencia {
+    color: #D5254B;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/* ------------------------------FOOTER------------------------------ */
+footer {
+    grid-area: zfooter;
+    background-color: #5b5c61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#contenedor-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer-info {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer-info div {
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+    color: #8e8f96;
+}
+
+#footer-info p {
+    cursor: pointer;
+}
+
+#footer-info h3 {
+    color: white;
+    cursor: pointer;
+}
+
+#contactanos {
+    width: 350px;
+    height: 250px;
+    background-color: #D5254B;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#contactanos img {
+    width: 80px;
+    height: 50px;
+}
+
+#contactanos h2,
+#contactanos p {
+    color: white;
+}
+
+#contactanos button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #5b5c61;
+    cursor: pointer;
+}
+
+#boton-publicar {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #D5254B;
+    font-size: 16px;
+    position: relative;
+    bottom: 50px;
+    right: 483px;
+    cursor: pointer;
+}
+
+#carruselPhotos {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    border: 1px solid;
+    background-color: white;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#carruselPhotos img {
+    position: relative;
+    top: 90px;
+}
+
+#carruselPhotos::-webkit-scrollbar {
+    display: none;
+}
+
+
+#cerrarModal {
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    /* Posición inicial en la parte superior */
+    left: 20px;
+    /* Posición inicial en la izquierda */
+    z-index: 1000;
+    /* Asegurar que esté por encima de otros elementos */
+}
+
+#cerrarModal.abajo {
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
+#infMap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: #BA2344;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+#noHab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 250px;
+    font-size: 30px;
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none;
+    /* Inicialmente oculto */
+    position: fixed;
+    /* Posicionamiento fijo */
+    z-index: 1;
+    /* Prioridad */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Permite el scroll si el contenido es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo oscuro con transparencia */
+}
+
+/* Contenido del modal */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: D5254B;
+    margin: 15% auto;
+    /* Márgenes arriba y abajo, centrado horizontalmente */
+    padding: 20px;
+    border: 2px solid #D5254B;
+    border-radius: 20px;
+    width: 30%;
+    /* Ancho del modal */
+    height: 30%;
+}
+
+.modal-content>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background-color: #D5254B;
+}
+
+#modalAyuda input {
+    border: #D5254B solid 2px;
+    border-radius: 3px;
+
+    margin: 10px;
+}
+
+#correo {
+    width: 300px;
+    height: 20px;
+}
+
+#comentario {
+    width: 300px;
+    height: 70px;
+
+}
+
+/* Botón para cerrar el modal */
+.close {
+    position: absolute;
+    bottom: 440px;
+    right: 550px;
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

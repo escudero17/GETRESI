@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 15% 1fr;
+  grid-template-areas:
+    "zaside zsection";
+}
+
+aside {
+  grid-area: zaside;
+  background-color: #3D4B64;
+}
+
+#title_GR {
+  display: flex;
+  align-items: center;
+  background-color: #303C54;
+  width: 100%;
+  height: 60px;
+}
+
+#GR {
+  position: relative;
+  left: 70px;
+  cursor: pointer;
+}
+
+#categories {
+  display: flex;
+  position: relative;
+  top: 14px;
+  justify-content: space-evenly;
+}
+#categories p{
+    cursor: pointer;
+}
+
+section {
+  grid-area: zsection;
+  background-color: rgb(242, 236, 236);
+
+}
+
+#admin_buttons {
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+#admin_buttons_aside {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#admin_buttons_aside>button {
+  background-color: #3D4B64;
+  border: none;
+  color: #a3abb6;
+}
+
+#section_header {
+  width: 100%;
+  height: 60px;
+}
+
+#caracteristicas_7{
+  width: 500px;
+}
+.button_admin {
+
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  
+}
+
+.button_top:hover {
+
+  transform: translateY(-0.33em);
+}
+
+#button_top:active {
+
+  transform: translateY(0);
+}
+
+#info {
+  position: relative;
+  text-align: center;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#char_1 {
+  display: block;
+}
+
+#char_2 {
+  display: none;
+}
+
+#char_3 {
+  display: none;
+}
+
+#char_4 {
+  display: none;
+}
+
+#char_5 {
+  display: none;
+}

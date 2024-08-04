@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia</title>
+    <link rel="stylesheet" href="assets/css/residencia.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+    <header>
+        <div onclick="window.location='index.html'">
+            <img id="logo_header" src="resources/logos_GR/GR_LOGO NEGRO.png" alt="">
+        </div>
+
+        <div id="header-botonera">
+            <div>Publica tu Residencia<p><ion-icon name="home"></ion-icon></p>
+            </div>
+            <div>Mi Cuenta<p><ion-icon name="person-circle"></ion-icon></p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="imgs-residencias">
+            <div id="nombre-residencia">
+                <i>RESIDENCIA COLONIES BRUXELLES RUE</i>
+                <img id="logo-residencias" src="resources/logos_GR/GR_LOGO BLANCO.png" alt="">
+            </div>
+            <div id="imagenes">
+                <img id="img1" src="resources/imgagenes_residencias/YUGO GLOBE WORKS.png" alt="">
+                <div id="contenedor-imagenes">
+                    <img class="imgs1" src="resources/imgagenes_residencias/COLONIES BRUXELLES RUE.png" alt="">
+                    <img class="imgs1" src="resources/imgagenes_residencias/COLONIES MARSEILLE BOULEVARD.png" alt="">
+                    <div class="imgs2"><img src="resources/imgagenes_residencias/COLONIES NANTES 15 RUE.png" alt="">
+                    </div>
+                    <div class="imgs2"><img src="resources/imgagenes_residencias/RESIDENCIA YUGO ARDCAIRN HOUSE.png"
+                            alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="opciones-residencias">
+            <p>Información</p>
+            <p>Habitaciones y precios</p>
+            <p>Opiniones</p>
+            <p>Preguntas frecuentes</p>
+        </div>
+        <div id="contenedor-infomacion">
+            <i>INFORMACIÓN</i>
+            <div id="info-residencia-adicional">
+                <div id="div1">
+                    <p>Una increible terraza solarium, habitaciones amplias, modernas, funcionales y un ambiente
+                        universitario que no encontrarás en otro lugar.</p>
+                        <br>
+                    <p>La residencia Colonies Bruxelles Rue está situadad en la calle San Bernardo, junto a la glorieta
+                        y Metro de San Bernardo, en pleno centro de Madrid, al lado de Malasaña.</p>
+                        br
+                    <p>Podrás escoger entre estdios individuales con baños compartidos,y habitaciones de 2 y 3
+                        dormitorios con baño provado y cocina común.</p>
+                        <br>
+                    <p>Es el alojamiento perfecto para estudiantes con un estilo de vida más independiente: salas de
+                        juego, salas de estudio, y más.</p>
+                </div>
+                <div id="div2">
+                    <h3>¿Qué hay en esta residencia?</h3>
+                    <div>
+                        <p><ion-icon name="book-outline"></ion-icon>Zonas de estudio</p>
+                        <p><ion-icon name="game-controller-outline"></ion-icon>Sala de juegos</p>
+                        <p><ion-icon name="leaf-outline"></ion-icon>Terraza</p>
+                        <p><ion-icon name="bicycle-outline"></ion-icon>Parking de bicicletas</p>
+                        <p><ion-icon name="tv-outline"></ion-icon>Sala de televisión</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor-mapa">
+            <div id="calcula-distancias">
+                <div id="contenedor-buscador">
+                    <h1>CALCULA LAS DISTANCIAS DESDE CUALQUIER PUNTO</h1>
+                    <div id="contenedor-input">
+                        <input id="input-buscador" placeholder="Madrid, España" type="text">
+                        <button id="boton-buscar-ciudades"><ion-icon
+                                name="search"></ion-icon></button>
+                        <img src="resources/logos_GR/GR_LOGO BLANCO.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4153319833085!2d-3.7104027999999993!3d40.4218013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287b26bec573%3A0x4b89fb2e627eefcc!2sResidencia%20de%20Estudiantes%20Gran%20V%C3%ADa%20Madrid%20-%20Mi%20Casa%20Inn!5e0!3m2!1sen!2ses!4v1710195910728!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="distancias">
+                    <h4>DISTANCIA DESDE RESIDENCIA COLONIES BRUXELLES RUE HASTA C/ GUZMAN DEL BUENO</h4>
+                    <p><ion-icon name="walk"></ion-icon> 27 min</p>
+                    <p><ion-icon name="bicycle"></ion-icon> 10 min</p>
+                    <p><ion-icon name="train"></ion-icon>34 min</p>
+                </div>
+            </div>
+        </div>
+        <div id="homepage-ubicaciones">
+            <h2>Residencias Cercanas</h2>
+            <div id="carrusel-residencias">
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/COLONIES MARSEILLE BOULEVARD.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Colonies Marseille Boulevard</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/COLONIES NANTES 15 RUE.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Colonies Nantes 15 Rue</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia"
+                        src="resources/imgagenes_residencias/RESIDENCIA YUGO ARDCAIRN HOUSE.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Residencia Yugo Ardcairin house</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/YUGO GLOBE WORKS.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Yugo Globe Works</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contenedor-footer">
+            <div id="footer-info">
+                <div>
+                    <h3>Sobre nosotros</h3>
+                    <p>Blog</p>
+                    <p>Cookies</p>
+                    <p>Politica de privacidad</p>
+                    <p>Términos de uso</p>
+                </div>
+                <div>
+                    <h3>Buscador</h3>
+                    <p>Colaboradores</p>
+                    <p>Universidades</p>
+                    <p>Ciudades</p>
+                    <p>Contacto</p>
+                </div>
+                <div>
+                    <h3>Ciudades más visitadas</h3>
+                    <p>Residencias en Madrid</p>
+                    <p>Residencias en Barcelona</p>
+                    <p>Residencias en Granada</p>
+                    <p>Residencias en Sevilla</p>
+                </div>
+            </div>
+            <div id="contactanos">
+                <img src="resources/logos_GR/GR_LOGO BLANCO.png" alt="">
+                <h2>¿Necesitas ayuda?</h2>
+                <p>Contacta con nuestro equipo</p>
+                <button>CONTACTAR</button>
+            </div>
+        </div>
+        <button id="boton-publicar">Publica tu residencia</button>
+
+
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

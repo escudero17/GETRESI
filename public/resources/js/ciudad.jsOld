@@ -1,0 +1,97 @@
+$(window).scroll(function (event) {
+    var scrollLeft = $(window).scrollLeft();
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= 100) {
+        document.querySelector('nav').style.position = "fixed";
+        document.querySelector('nav').style.zIndex = "100";
+
+    }
+    if (scrollTop >= 200) {
+        document.querySelector("footer").style.display = "none";
+        document.querySelector("#mapa-ciudad").style.marginTop = "70px";
+    }
+    if (scrollTop >= 300) {
+        document.querySelector('#fechas-residencias').style.position = "fixed";
+        document.querySelector('#fechas-residencias').style.zIndex = "100";
+        document.querySelector('#fechas-residencias').style.top = "40px";
+        document.querySelector("#contenedor-residencias").style.marginTop = "70px";
+        document.querySelector("#mapa-ciudad").style.position = "fixed";
+        document.querySelector("#mapa-ciudad").style.top = "50px";
+        document.querySelector("#mapa-ciudad").style.left = "58%";
+        document.querySelector("#mapa-ciudad").style.marginTop = "70px";
+        document.querySelector("#mapa-ciudad").style.height = "600px";
+        document.querySelector("section").style.justifyContent = "left";
+        document.querySelector("section").style.marginLeft = "20px";
+    }
+    if (scrollTop < 100) {
+        document.querySelector('nav').style.position = "";
+        document.querySelector("nav").style.backgroundColor = "white";
+        document.querySelector("#mapa-ciudad").style.position = "fixed";
+        document.querySelector("#mapa-ciudad").style.top = "200px";
+        document.querySelector("#mapa-ciudad").style.left = "58%";
+        document.querySelector("#mapa-ciudad").style.marginTop = "70px";
+        document.querySelector("#mapa-ciudad").style.height = "600px";
+
+    }
+    if (scrollTop < 200) {
+        document.querySelector("#mapa-ciudad").style.position = "";
+        document.querySelector("#mapa-ciudad").style.position = "fixed";
+        document.querySelector("#mapa-ciudad").style.top = "100px";
+        document.querySelector("#mapa-ciudad").style.left = "58%";
+        document.querySelector("#mapa-ciudad").style.marginTop = "150px";
+        document.querySelector("#mapa-ciudad").style.height = "600px";
+        document.querySelector("#contenedor-section").style.width = "55%";
+        document.querySelector("#contenedor-section").style.paddingRight = "0";
+    }
+    if (scrollTop < 300) {
+        document.querySelector("#contenedor-buscador").style.display = "flex";
+        document.querySelector('#fechas-residencias').style.position = "";
+        document.querySelector('#fechas-residencias').style.width = "100%";
+        document.querySelector("#contenedor-residencias").style.marginTop = "0px";
+        document.querySelector("#mapa-ciudad").style.position = "fixed";
+        document.querySelector("#mapa-ciudad").style.top = "70px";
+        document.querySelector("#mapa-ciudad").style.left = "58%";
+        document.querySelector("#mapa-ciudad").style.marginTop = "70px";
+        document.querySelector("#mapa-ciudad").style.height = "600px";
+
+    }
+});
+
+$(document.querySelector("#contenedor-residencias")).scroll(function (event) {
+    var scrollLeft = $(window).scrollLeft();
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= 100) {
+        document.querySelector('nav').style.position = "fixed";
+        document.querySelector('nav').style.zIndex = "100";
+
+    }
+   
+});
+
+
+// Impresión del formulario para envío de correo Contáctanos
+function fShowContactanos(){
+    document.querySelector(".cosas").innerHTML = "";
+
+    let html = "";
+    html += "<input type='text' name='correo' placeholder='Correo'>";
+    html += "<input type='text' name='contenido' placeholder='Escribe aquí tu comentario'>";
+    html += "<button type='submit'>Enviar</button>"
+
+    document.querySelector("#formCorreo").innerHTML = html;
+
+}
+
+// Impresión del formulario para envío de correo Contáctanos
+function fShowContactanos(){
+    document.querySelector(".cosas").innerHTML = "";
+
+    let html = "";
+    html += "<input type='text' name='correo' placeholder='Correo'>";
+    html += "<input type='text' name='contenido' placeholder='Escribe aquí tu comentario'>";
+    html += "<button type='submit'>Enviar</button>"
+
+    document.querySelector("#formCorreo").innerHTML = html;
+}

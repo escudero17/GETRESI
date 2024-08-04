@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "zheader"
+        "zsection"
+        "zfooter";
+}
+header{
+    grid-area: zheader;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo_header{
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+}
+#header-botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px
+}
+#header-botonera div{
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+#header-botonera div:hover{
+    background-color: #BA2344;
+    border-color: #BA2344;
+}
+#header-botonera p{
+    font-size: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+section{
+    grid-area: zsection;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+#contenido {
+    padding: 20px;
+    align-items: center;
+    width: calc(100% - 40px); /* Ajusta el ancho del formulario restando el doble del espacio de relleno (20px a cada lado) */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+#contenido .formMiCuenta p {
+    color: gray;
+    font-size: 15px;
+}
+
+
+.formMiCuenta {
+    width: 100%; /* Ancho del formulario */
+}
+
+
+#contenido input[type="text"],
+#contenido input[type="email"],
+#contenido input[type="password"] {
+    width: calc(100% - 40px); /* Ajusta el ancho de los inputs restando el doble del espacio de relleno (20px a cada lado) */
+    padding: 10px; /* Ajusta el relleno dentro de los inputs */
+    margin-bottom: 10px; /* Espacio entre los inputs */
+}
+
+.formMiCuenta input[type="text"],
+.formMiCuenta button {
+    width: 96%; /* Ancho de los inputs y el botón */
+    padding: 10px; /* Relleno interno de los inputs */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+.boton{
+    color: white;
+    font-size: 20px;
+    background-color: #BA2344;
+}
+footer{
+    grid-area: zfooter;
+    background-color: #5b5c61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contenedor-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-info{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-info div{
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+    color: #8e8f96;
+}
+#footer-info p{
+    cursor: pointer;
+}
+#footer-info h3{
+    color: white;
+    cursor: pointer;
+}
+#contactanos{
+    width: 350px;
+    height: 250px;
+    background-color: #D5254B;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+#contactanos img{
+    width: 80px;
+    height: 50px;
+}
+#contactanos h2, #contactanos p{
+    color: white;
+}
+#contactanos button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #5b5c61;
+    cursor: pointer;
+}
+#boton-publicar{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #D5254B;
+    font-size: 16px;
+    position: relative;
+    bottom: 80px;
+    right: 450px;
+    cursor: pointer;
+}
+#containerF{
+    position: relative;
+margin-left: 80px;
+width: 600px;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center ;
+
+}
+#containerF>div>p{
+    cursor: pointer;
+}
+#filterCage{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #8e8f96;
+    z-index: 100;
+}
+.info{
+    width: 200px;
+    height: 200px;
+    background-color: #dad5d5;
+    position: absolute;
+    top: 40px;
+    z-index: 100;
+    border: 3px solid #dad5d5;
+    border-radius: 8px;
+    z-index: 1000;
+}
+#buscarBt{
+    padding: 7px 16px;
+    background-color: #d84061;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#buscarBt:hover{
+    background-color: #BA2344;
+}

@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetResi</title>
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body onload="fCargarHomepageCiudades()">
+
+    <header>
+        <video autoplay muted loop id="video-scroll">
+            <source src="resources/videos/01_VIDEO HEADER SCROLL 1.mp4" type="video/mp4">
+        </video>
+        <div id="header-principal">
+            <div id="header-logo">
+                <img src="resources/logos_GR/GR_LOGO BLANCO.png" alt="">
+            </div>
+            <div id="header-botonera">
+                <div>Publica tu Residencia<p><ion-icon name="home"></ion-icon></p>
+                </div>
+                <div>Mi Cuenta<p><ion-icon name="person-circle"></ion-icon></p>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor-principal">
+            <div id="buscador-principal">
+                <i>¿EN QUÉ CIUDAD VAS A ESTUDIAR?</i>
+                <div id="contenedor-buscador">
+                    <div id="contenedor-input">
+                        <form action="ciudad.html">
+                            <input id="input-buscador" placeholder="Madrid, España" type="text">
+                        </form>
+                    </div>
+                    <div id="contendor-ciudades-buscador">
+                        <div class="ciudad-buscador">
+                            <p><ion-icon name="navigate"></ion-icon></p>
+                            <p>Madrid</p>
+                        </div>
+                        <div class="ciudad-buscador">
+                            <p><ion-icon name="navigate"></ion-icon></p>
+                            <p>Barcelona</p>
+                        </div>
+                        <div class="ciudad-buscador">
+                            <p><ion-icon name="navigate"></ion-icon></p>
+                            <p>Sevilla</p>
+                        </div>
+                        <a type="button" id="boton-buscar-ciudades"  href="ciudad.html"><ion-icon name="arrow-forward-circle"></ion-icon></a>
+                        <p id="icono-buscador"><ion-icon name="location-sharp"></ion-icon></p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="logos-partners">
+            <div class="logo-partner"><img src="resources/logos_partners/03_LOGO AMRO BLANCO PNG.png"></div>
+            <div class="logo-partner"><img src="resources/logos_partners/03_LOGO LIV STUDENT BLANCO PNG.png"></div>
+            <div class="logo-partner"><img style="width: 100px;"
+                    src="resources/logos_partners/03_LOGO MICAMPUS BLANCO PNG.png"></div>
+            <div class="logo-partner"><img src="resources/logos_partners/03_LOGO RESA BLANCO PNG.png"></div>
+            <div class="logo-partner"><img src="resources/logos_partners/03_LOGO XIOR BLANCO PNG.png"></div>
+        </div>
+    </header>
+    <section>
+        <div id="contenedor-info">
+            <div id="foto-presentacion"></div>
+            <div id="info-presentacion">
+                <i>UNA <span>EMPRESA LÍDER</span> EN LA BÚSQUEDA DE <span>ALOJAMIENTO UNIVERSITARIO</span></i>
+                <p> Busca, compara y reserva tu Residencia de Estudiantes con nosotros. Además, podrás beneficiarte de
+                    descuentos y promociones con algunos de nuestros partners como Goiko, Redbull o FMS.
+                    ¡Somos los únicos en ofrecértelo!
+                </p>
+                <div id="botonera-presentacion">
+                    <button class="boton-presentacion" onclick="window.location.href='beneficios.html'"><ion-icon name="caret-forward-sharp"></ion-icon>ACERCA DE
+                        GETRESI</button>
+                    <button style="background-color: #D5254B; border-color: #D5254B;"
+                        class="boton-presentacion">DESCARGAR DECK</button>
+                </div>
+            </div>
+        </div>
+        <div id="homepage-ubicaciones">
+            <i>EXPLORA NUESTRAS<span> UBICACIONES</span></i>
+            <div id="carrusel-residencias">
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/COLONIES BRUXELLES RUE.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Colonies Bruxelles Rue</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/COLONIES MARSEILLE BOULEVARD.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Colonies Marseille Boulevard</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/COLONIES NANTES 15 RUE.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Colonies Nantes 15 Rue</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia"
+                        src="resources/imgagenes_residencias/RESIDENCIA YUGO ARDCAIRN HOUSE.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Residencia Yugo Ardcairin house</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="residencias">
+                    <img class="img-residencia" src="resources/imgagenes_residencias/YUGO GLOBE WORKS.png">
+                    <div class="info-residencia">
+                        <div class="div-opiniones">
+                            <p>RESIDENCIA</p>
+                            <div>Sin reseñas</div>
+                        </div>
+                        <p class="nombre-residencia">Yugo Globe Works</p>
+                        <hr>
+                        <div class="botonera-residencia">
+                            <div>
+                                <p><ion-icon name="bed"></ion-icon></p>
+                                <p>Habitaciones Individuales</p>
+                            </div>
+                            <p onclick="window.location.href='residencia.html'; fCargarResidencias('hola')"  class="boton-residencia"><ion-icon name="arrow-forward-circle"></ion-icon></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="homepage-ciudades">
+            <i id="titulo-ciudades">CIUDADES</i>
+            <div id="contenedor-ciudades"></div>
+        </div>
+    </section>
+    <footer>
+        <div id="contenedor-footer">
+            <div id="footer-info">
+                <div>
+                    <h3>Sobre nosotros</h3>
+                    <p>Blog</p>
+                    <p>Cookies</p>
+                    <p>Politica de privacidad</p>
+                    <p>Términos de uso</p>
+                </div>
+                <div>
+                    <h3>Buscador</h3>
+                    <p>Colaboradores</p>
+                    <p>Universidades</p>
+                    <p>Ciudades</p>
+                    <p>Contacto</p>
+                </div>
+                <div>
+                    <h3>Ciudades más visitadas</h3>
+                    <p>Residencias en Madrid</p>
+                    <p>Residencias en Barcelona</p>
+                    <p>Residencias en Granada</p>
+                    <p>Residencias en Sevilla</p>
+                </div>
+            </div>
+            <div id="contactanos">
+                <img src="resources/logos_GR/GR_LOGO BLANCO.png" alt="">
+                <h2>¿Necesitas ayuda?</h2>
+                <p>Contacta con nuestro equipo</p>
+                <button>CONTACTAR</button>
+            </div>
+        </div>
+        <button id="boton-publicar">Publica tu residencia</button>
+
+
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
